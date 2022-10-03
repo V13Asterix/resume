@@ -1,96 +1,98 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML5>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Igor Resume</title>
     <meta name="keywords" content="resume, igor, sv" />
     <meta name="dicription" content="Это страница с резюме Приходько Игоря." />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <table cellspacing="15">
-      <tr>
-        <td>
-          <img src="фотка.jpg" width="200" alt="место для рекламы" />
-        </td>
-        <td>
+    <div class="container">
+      <div class="info">
+        <img src="фотка.jpg" alt="Игорь Приходько" class="avatar" />
+
+        <div class="info-text">
           <h1>Игорь Приходько</h1>
-          <p>
-            Я <strong>инженер</strong> по допуску трансопртных срдеств к участию
-            в дорожном движении
-          </p>
+
+          <p>Я <strong>инженер</strong> по допуску трансопртных срдеств к участию в дорожном движении</p>
+
           <p>Я люблю работать с <em>автомобилями и мотоциклами</em></p>
-        </td>
-      </tr>
-    </table>
 
-    <hr />
+          <h3>Мои социальные сети:</h3>
 
-    <h2>Мои социальные сети:</h2>
-    <a href="https://vk.com/v13_asterix" target="_blanc">Vkontakte</a>
-    |
-    <a href="https://instagram.com/v13Asterix" target="_blank">Instagram</a>
+          <a href="https://vk.com/v13_asterix" target="_blanc">Vkontakte</a>
+          |
+          <a href="https://instagram.com/v13Asterix" target="_blank">Instagram</a>
+        </div>
+      </div>
 
-    <hr />
+      <div class="card bg-1">
+        <h2>Мои хобби:</h2>
 
-    <h2>Мои хобби:</h2>
-    <ol>
-      <li>езда на мотоцикле</li>
-      <li>автомобили</li>
-      <li>технологии</li>
-    </ol>
+        <ol class="hobby">
+          <li>езда на мотоцикле</li>
+          <li>автомобили</li>
+          <li>технологии</li>
+        </ol>
+      </div>
 
-    <h2>Опыт работы</h2>
-    <table>
-      <tr>
-        <th>Место работы</th>
-        <th>Должность</th>
-        <th>Год работы</th>
-      </tr>
-      <tr>
-        <td>ОАО "СМТ №27"</td>
-        <td>Водитель</td>
-        <td>2013-2016</td>
-      </tr>
-      <tr>
-        <td>СУ-239</td>
-        <td>инженер-механик</td>
-        <td>2016-2017</td>
-      </tr>
-    </table>
+      <div class="card bg-2">
+        <h2>Опыт работы</h2>
+        <table class="table">
+          <!-- <tr>
+            <th>Место работы</th>
+            <th>Должность</th>
+            <th>Год работы</th>
+          </tr> -->
+          <tr>
+            <td>ОАО "СМТ №27"</td>
+            <td>Водитель</td>
+            <td>2013-2016</td>
+          </tr>
+          <tr>
+            <td>СУ-239</td>
+            <td>инженер-механик</td>
+            <td>2016-2017</td>
+          </tr>
+        </table>
+      </div>
 
-    <hr />
+      <div class="card bg-3">
+        <h2 class="lern">Онлайн курсы</h2>
+        <a href="curses.html">Посмотреть список</a>
+      </div>
 
-    <h2>Онлайн курсы</h2>
-    <a href="curses.html">посмотреть список</a>
+      <form action="/" class="form">
+        <h2>Связаться со мной</h2>
 
-    <hr />
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Введите имя" />
+          </div>
 
-    <h2>Связаться со мной</h2>
+          <div class="form-group">
+            <label for="email">Ваш email:</label>
+            <input type="text" id="email" placeholder="Введите email" />
+          </div>
+        </div>
 
-    <form action="/">
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" placeholder="Введите имя" />
+        <div class="form-group">
+          <label for="text">Ваше сообщение:</label>
 
-      <br />
+          <textarea
+            name=""
+            id="text"
+            cols="20"
+            rows="5"
+            placeholder="Введите соообщение..."></textarea>
+        </div>
 
-      <label for="email">Ваш email:</label>
-      <input type="text" id="email" placeholder="Введите email" />
-
-      <br />
-
-      <label for="text">Ваше сообщение:</label>
-      <br />
-      <textarea
-        name=""
-        id="text"
-        cols="20"
-        rows="5"
-        placeholder="Введите соообщение..."
-      ></textarea>
-      <br />
-
-      <input type="submit" value="Отправить!" />
-    </form>
+        <input type="submit" value="Отправить!" class="btn" />
+      </form>
+    </div>
   </body>
 </html>
